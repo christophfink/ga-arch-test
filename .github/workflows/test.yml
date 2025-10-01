@@ -46,7 +46,6 @@ jobs:
         with:
           python-version: "${{matrix.python_version}}"
           architecture: "${{matrix.architecture}}"
-          cache: "pip"
 
       - run: |
           python -c 'import platform; print(f"{platform.system()}-{platform.machine()}");'
