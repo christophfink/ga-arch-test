@@ -49,4 +49,5 @@ jobs:
 
       - run: |
           python -c 'import platform; print(f"{platform.system()}-{platform.machine()}");'
+          python -c 'import sysconfig; print(f"{sysconfig.get_platform()}");'
 
